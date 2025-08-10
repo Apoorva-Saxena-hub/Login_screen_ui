@@ -21,6 +21,18 @@ class LoginScreen extends StatelessWidget {
                 iconPath: 'assets/svgs/g_logo.svg',
                 label: 'Continue with Google',
               ),
+              SizedBox(height: 20),
+              const SocialButton(
+                iconPath: 'assets/svgs/f_logo.svg',
+                label: 'Continue with Facebook',
+                horizontalPadding: 90,
+              ),
+              const SizedBox(height: 30,),
+              Text('or',style: TextStyle(
+                fontSize: 17
+              ),),
+              SizedBox(height: 15,),
+              
             ],
           ),
         ),
