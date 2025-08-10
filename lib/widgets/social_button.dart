@@ -16,6 +16,13 @@ class SocialButton extends StatelessWidget {
         label,
         style: const TextStyle(color: Pallete.whiteColor, fontSize: 17),
       ),
+      style: TextButton.styleFrom(
+        padding: EdgeInsets.symmetric(vertical: 30, horizontal: 100),
+        shape: RoundedRectangleBorder(
+          side: const BorderSide(color: Pallete.borderColor, width: 3),
+          borderRadius: BorderRadiusGeometry.circular(10),
+        ),
+      ),
     );
   }
 }
