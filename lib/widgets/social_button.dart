@@ -6,6 +6,7 @@ class SocialButton extends StatelessWidget {
   final String iconPath;
   final String label;
   final double horizontalPadding;
+
   const SocialButton({
     super.key,
     required this.iconPath,

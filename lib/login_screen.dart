@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/widgets/gradient_button.dart';
 import 'package:login/widgets/login_field.dart';
 import 'package:login/widgets/social_button.dart';
 
@@ -19,6 +20,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 50),
               const SocialButton(
+                
                 iconPath: 'assets/svgs/g_logo.svg',
                 label: 'Continue with Google',
               ),
@@ -26,7 +28,7 @@ class LoginScreen extends StatelessWidget {
               const SocialButton(
                 iconPath: 'assets/svgs/f_logo.svg',
                 label: 'Continue with Facebook',
-                horizontalPadding: 90,
+                horizontalPadding: 90, 
               ),
               const SizedBox(height: 30),
               Text('or', style: TextStyle(fontSize: 17)),
@@ -35,6 +37,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 15),
               LoginField(hintText: "Password"),
               SizedBox(height: 20),
+              const GradientButton(),
             ],
           ),
         ),
