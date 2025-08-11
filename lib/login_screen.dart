@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/widgets/login_field.dart';
 import 'package:login/widgets/social_button.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -27,12 +28,13 @@ class LoginScreen extends StatelessWidget {
                 label: 'Continue with Facebook',
                 horizontalPadding: 90,
               ),
-              const SizedBox(height: 30,),
-              Text('or',style: TextStyle(
-                fontSize: 17
-              ),),
-              SizedBox(height: 15,),
-              
+              const SizedBox(height: 30),
+              Text('or', style: TextStyle(fontSize: 17)),
+              SizedBox(height: 15),
+              LoginField(hintText: "Email"),
+              SizedBox(height: 15),
+              LoginField(hintText: "Password"),
+              SizedBox(height: 20),
             ],
           ),
         ),
